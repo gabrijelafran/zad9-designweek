@@ -1,0 +1,92 @@
+body {
+  
+    background-color: #fef9f6;
+    color: #5f4b66;
+    margin: 0;
+    padding: 0;
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+}
+
+header {
+    background-color: #D9A9E0;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul > li + li {
+    margin-left: 50px;
+}
+
+nav a {
+    text-decoration:none;
+    color: #5f4b66;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 250px 50px;
+    background-color: #ffe6f0;
+    background-size: cover;
+    background-position: center;
+    color: #5f4b66;
+}
+
+#countdown {
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #D9A9E0;
+    background-color: rgba(250, 238, 224, 0.8);
+    border-radius: 10px;
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        background-color: rgba(250, 238, 224, 0.8);
+    }
+    50% {
+        transform: scale(1.05);
+        background-color: rgba(252, 228, 207, 0.8);
+    }
+}
+
+/* Complex selectors for custom styling */
+.hero p:first-of-type {
+    font-size: 1.2em;
+    color: #5f4b66;
+}
+
+#countdown span {
+    color: #ab6377;
+}
+
+#home > .hero h1 {
+    font-size: 2.5em;
+    color: #5f4b66;
+}
+
+nav ul li:first-child a:hover {
+    color: #5f4b66;
+}
+
+/* Selective styling using :nth-child */
+nav ul li:nth-child(2) a {
+    font-style: italic;
+}
+
+nav ul li:nth-of-type(4) a {
+    text-transform: uppercase;
+}

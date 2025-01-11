@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Week 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Osnovni stil za navigaciju */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: normal;  /* Osigurava da tekst nije podebljan */
+            font-style: normal;   /* Uklanja kurziv (italic) */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Početna</a></li>
+                <li><a href="odogadaju.html">O događaju</a></li>
+                <li><a href="raspored.html">Raspored</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Dobrodošli na Design Week 2026</h1>
+            <p>Pridružite nam se od 15. do 21. travnja 2026. godine</p>
+            <div id="countdown">
+                <span id="days">0</span> dana 
+                <span id="hours">0</span> sati 
+                <span id="minutes">0</span> minuta 
+                <span id="seconds">0</span> sekundi
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function updateCountdown() {
+            const eventDate = new Date('April 15, 2026 00:00:00').getTime();
+            const now = new Date().getTime();
+            const timeLeft = eventDate - now;
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+        }
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>

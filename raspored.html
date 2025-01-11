@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspored - Design Week 2026</title>
+    <link rel="stylesheet" href="styles.css">     
+    <style>
+        /* Smanjivanje razmaka između headera i glavnog sadržaja */
+        header h1, header p {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            margin-bottom: 20px; /* Manji razmak između navigacije i naslova */
+        }
+
+        /* Pozadinska boja za cijelu stranicu */
+        body {
+            background-color: #f2e6ff; /* Pastelna lila pozadina */
+     
+    color: #5f4b66;
+    margin: 0;
+    padding: 0;
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+        }
+
+        /* Stilovi za tablicu */
+        .table-container {
+            margin: 0 20px; /* Margine sa strane za tablicu */
+            padding: 20px;
+            background-color: #f9f9f9; /* Pozadinska boja za bolju vidljivost */
+            border-radius: 8px; /* Zaobljeni rubovi */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #ffccf2; /* Roza pozadina za zaglavlja */
+        }
+
+        td {
+            background-color: #ffe6f0; /* Svijetlo roza pozadina za ćelije */
+        }
+
+        /* Raspored događanja */
+        #schedule {
+            margin-top: 40px;
+            margin-bottom: 40px; /* Margine oko cijelog rasporeda */
+        }
+
+        /* Hero odjeljak s marginama */
+        .hero {
+            margin-top: 30px;
+            margin-bottom: 30px; /* Margine oko hero odjeljka */
+        }
+
+        /* Dodatne margine za naslove */
+        h1, h2, p {
+            margin-bottom: 15px;
+        }
+
+        /* Margine između navigacije i sadržaja */
+        nav ul {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="odogadjaju.html">O događaju</a></li>
+            <li><a href="raspored.html">Raspored</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+		<br>
+		<br>
+		<br>
+    </nav>
+    <h1>Design Week 2026 - Raspored Događanja</h1> <br> <br>
+    <p>Trg Kreativnosti 1, Zagreb | 15. - 21. travnja 2026.</p>
+</header>
+
+<main id="schedule">
+    <!-- Tablica u okruženju s marginama -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Dan</th>
+                    <th width="10%">Vrijeme</th>
+                    <th width="24%">Događaj</th>
+                    <th width="51%">Opis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Ponedjeljak -->
+                <tr>
+                    <td rowspan="3">Ponedjeljak, 15. travnja</td>
+                    <td>10:00 - 12:00</td>
+                    <td>Otvorenje Design Week-a 2026</td>
+                    <td>Službeno otvaranje uz pozdravne govore organizatora, sponzora i uglednih dizajnera.</td>
+                </tr>
+                <tr>
+                    <td>12:30 - 14:00</td>
+                    <td>Design Thinking: Od ideje do realizacije</td>
+                    <td>Radionica koja objašnjava metodologiju dizajnerskog razmišljanja i njen primjena u praksi.</td>
+                </tr>
+                <tr>
+                    <td>15:00 - 17:00</td>
+                    <td>Interaktivna izložba: Budućnost gradova</td>
+                    <td>Interaktivna instalacija koja istražuje dizajn urbanih prostora u budućnosti.</td>
+                </tr>
+
+                <!-- Utorak -->
+                <tr>
+                    <td rowspan="3">Utorak, 16. travnja</td>
+                    <td>10:00 - 11:30</td>
+                    <td>Panel diskusija: Održivost u dizajnu</td>
+                    <td>Razgovor o važnosti održivih materijala, ekološkim praksama i inovacijama u industriji dizajna.</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 14:00</td>
+                    <td>Radionica: Kreativni proces u grafičkom dizajnu</td>
+                    <td>Demonstracija kreativnih tehnika za izradu grafičkog dizajna, od skica do digitalnih rješenja.</td>
+                </tr>
+                <tr>
+                    <td>15:00 - 17:00</td>
+                    <td>Design Trendovi 2026</td>
+                    <td>Prezentacija najnovijih trendova u dizajnu, s naglaskom na tehnologiju i minimalizam.</td>
+                </tr>
+
+                <!-- Srijeda -->
+                <tr>
+                    <td rowspan="3">Srijeda, 17. travnja</td>
+                    <td>09:30 - 11:00</td>
+                    <td>Masterclass: UX/UI dizajn za početnike</td>
+                    <td>Osnove dizajna korisničkog iskustva i sučelja. Uvod u najnovije alate i tehnike.</td>
+                </tr>
+                <tr>
+                    <td>11:30 - 13:00</td>
+                    <td>Panel diskusija: Dizajn u industriji mode</td>
+                    <td>Razgovor o ulozi dizajna u industriji mode i kako inovacije oblikuju nove trendove.</td>
+                </tr>
+                <tr>
+                    <td>14:00 - 16:00</td>
+                    <td>Radionica: 3D tiskanje u dizajnu</td>
+                    <td>Tehnički uvid u primjenu 3D tiskača u dizajnu proizvoda i arhitekturi.</td>
+                </tr>
+
+                <!-- Četvrtak -->
+                <tr>
+                    <td rowspan="3">Četvrtak, 18. travnja</td>
+                    <td>10:00 - 12:00</td>
+                    <td>Prezentacija: Digitalni dizajn u reklamnoj industriji</td>
+                    <td>Kako digitalni alat i platforme transformiraju svijet oglašavanja i brendinga.</td>
+                </tr>
+                <tr>
+                    <td>12:30 - 14:00</td>
+                    <td>Radionica: Dizajniranje za društvene promjene</td>
+                    <td>Kako dizajneri mogu koristiti svoje vještine za društveno odgovorne projekte i inicijative.</td>
+                </tr>
+                <tr>
+                    <td>15:00 - 17:00</td>
+                    <td>Izložba: Vizualna umjetnost i dizajn</td>
+                    <td>Prikaz umjetničkih djela i dizajnerskih projekata koji spajaju vizualne umjetnosti s industrijskim dizajnom.</td>
+                </tr>
+
+                <!-- Petak -->
+                <tr>
+                    <td rowspan="3">Petak, 19. travnja</td>
+                    <td>10:00 - 12:00</td>
+                    <td>Prezentacija inovacija u industrijskom dizajnu</td>
+                    <td>Novi materijali i tehnologije koje mijenjaju industrijski dizajn.</td>
+                </tr>
+                <tr>
+                    <td>12:30 - 14:00</td>
+                    <td>Workshop: Digitalna ilustracija za dizajn</td>
+                    <td>Upoznavanje s tehnikama digitalne ilustracije i alatima za dizajnerske projekte.</td>
+                </tr>
+                <tr>
+                    <td>15:00 - 17:00</td>
+                    <td>Roundtable: Dizajn kao alat za socijalnu inkluziju</td>
+                    <td>Razgovor o ulozi dizajna u stvaranju inkluzivnih i pristupačnih prostora i proizvoda.</td>
+                </tr>
+
+                <!-- Subota -->
+                <tr>
+                    <td rowspan="3">Subota, 20. travnja</td>
+                    <td>10:00 - 12:00</td>
+                    <td>Radionica: Kreativno pisanje u dizajnu</td>
+                    <td>Kako koristiti kreativno pisanje za oblikovanje brendova i dizajn komunikacije.</td>
+                </tr>
+                <tr>
+                    <td>12:30 - 14:00</td>
+                    <td>Prezentacija: Moguće primjene AR u dizajnu</td>
+                    <td>Prikaz mogućnosti proširene stvarnosti u industriji dizajna.</td>
+                </tr>
+                <tr>
+                    <td>15:00 - 17:00</td>
+                    <td>Design and Music: Kreativno umrežavanje</td>
+                    <td>Umrežavanje dizajnera, umjetnika i glazbenika kroz zajednički kreativni proces.</td>
+                </tr>
+
+                <!-- Nedjelja -->
+                <tr>
+                    <td rowspan="2">Nedjelja, 21. travnja</td>
+                    <td>10:00 - 12:00</td>
+                    <td>Panel diskusija: Budućnost digitalnog dizajna</td>
+                    <td>Razgovor o naprednim tehnologijama koje oblikuju digitalnu dizajnersku industriju.</td>
+                </tr>
+                <tr>
+                    <td>12:30 - 14:00</td>
+                    <td>Zaključna ceremonija i nagrade</td>
+                    <td>Završna ceremonija Design Week-a, s dodjelom nagrada za najbolje dizajnerske projekte i inovacije.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>
+
+</body>
+</html>
